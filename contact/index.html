@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hyun Kim: Personal site and portfolio</title>
+    <title>Contact</title>
     <nav class="menu">
         <ol>
             <li><a href="../index.html">Home</a></li>
@@ -14,13 +13,28 @@
             <li><a href="../resume/index.html">Resume</a></li>
         </ol>
     </nav>
-    <h1>Hyun Kim</h1>
-    <p>Hi! I'm a junior at MIT studying AI and Decision Making.</p>
+    <h1>Hyun's Contact Info</h1>
 
-    <img
-  class="photo"
-  src="images/Kim, Hyun.png" 
-  alt="photo of Hyun Kim" />
+    <form action="mailto:hkim2022@mit.edu" method="POST" enctype="text/plain">
+        <label>
+            Email:
+            <input type="email" name="email" required>
+        </label>
+
+        <label>
+            Subject:
+            <input name="subject" required>
+        </label>
+
+        <label>
+            Body:
+            <textarea name="body" required></textarea>
+        </label>
+
+        <button>Submit</button>
+    </form>
+    
+    
 </head>
 <body>
     
