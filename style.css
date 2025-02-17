@@ -1,7 +1,261 @@
+/* 
+   NOTE: this skeleton will help you go through steps 1-3 (some parts are missing for you to work on them!)
+   For a better learning, we recomend you take individual parts of this skeleton step-by-step, so that you can see how 
+   each part changes the webpage's style as explained in the course website.
+*/
+
+
+
+/* 
+   :root is used to define global CSS variables (custom properties)
+   These variables can be reused throughout the stylesheet to maintain consistency
+   For examplem we can use :root to define colors
+*/
+:root {
+  --color-accent: oklch(59.12% 0.2738 266.82) /* Primary accent color in OKLCH format */
+  --border-gray: oklch(80% 3% 200); /* Gray for borders */
+  /* ADD the rest of the color definitions here if needed! */
+}
+
+/* STEP 1: Prevent content from getting too wide */
+
+/* 
+  Here we can define the base style for the body element. We already added this in Lab 1, but let's complete it!
+*/
 body {
-    /* Set line height to 1.5 times the font size
-       and use the OS’s UI font as the website font
-     */
-    font: 100%/1.5 system-ui;
-   }
-   
+  font: 100%/1.5 system-ui; /* 100% font size, 1.5 line height, system font. Same as in lab 1 */
+  max-width: 100ch; /* Limits width to 50 rems for better readability */
+  /* Add here margin-inline */
+  margin-inline: max(1em, (100% - 100ch) / 2);
+  /* Add here padding around the body */
+  padding: 1em;
+  accent-color: var(--color-accent);
+}
+
+
+/* STEP 2: Styling the navigation bar */
+
+/* 
+ Step 2.1: Getting <ul> and <li> out of the way
+ "display: contents" removes default styling while keeping semantic structure 
+ (you do not need to make any changes here for step 2.1, but please take note of it!)
+*/
+nav ul, 
+nav li {
+  display: contents;
+}
+
+/* Step 2.2: Apply Flexbox to the navigation */
+nav {
+  display: flex; /* Turns nav into a flex container */
+
+  /* You will need to continue writing here for step 2.3 */
+}
+
+/* Step 2.3: Style navigation links for each element <a> */
+nav a {
+  flex: 1; /* step 2.2 for each element to take the same space  */
+  text-decoration: none; /* Remove the underline from the links by setting */
+  /* Add here color */
+  color:inherit;
+  /* Add here text-align */
+  text-align:center;
+  /* Add here padding */
+  padding: 4em;
+  /* Add here margin-bottom */
+  margin-bottom: 1px;
+
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-accent);
+  padding-bottom: 0.1em;
+}
+  /* NOTE: please make sure that in each index.html page you add class="current" to the current page*/
+      /* For example:  <a href="index.html" class="current">Home</a> */ 
+
+      nav a.current {
+        font-weight: bold;
+        border-bottom-width: 0.4em;
+        border-bottom-color: var(--border-gray);
+        padding-bottom: 0.1em;
+
+        
+  /* Add here what your current page should look like at the navigation bar (highlight)*/
+}
+
+/* Before jumping to the next step, remember to complete wtep 2.3 by editing 'nav' */
+
+/* 
+ Step 2.4: Accent color and hover styles
+*/
+nav a:hover {
+  /* Add here hover effects */
+  border-bottom-width: 0.4em;
+  border-bottom-color: oklch(59.12% 0.2738 266.82);
+  padding-bottom: 0.1em;
+  background-color: oklch(95.12% 0.2738 266.82);
+}
+
+
+/*  STEP 3: Contact form layout */
+
+/* Step 3.1: Integrate typography */
+  /* (you do not need to make any changes here for step 2.1, but please take note of it!) */
+input,
+textarea,
+button {
+  font: inherit; /* Ensures form elements use the same font as the body */
+}
+
+/* Step 3.2: Top-down layout */
+
+
+/* Step 3.2: Grid layout */
+
+  /* 
+      Please work on grid layout here.
+      NOTE: this will override what you did in the previous step! remember *Specificity*
+  */
+
+form {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1em; 
+}
+
+form label {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1; 
+}
+
+form button {
+  grid-column: 1 / -1;
+}
+
+
+/* STEP 4: Style your projects page */
+
+img {
+  max-width: 100%;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.projects article {
+  display: grid;
+  grid-template-rows: subgrid;
+  grid-row: span 3;
+}
+
+.projects article h2 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.1;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+
+/* STEP 5: Style your CV */
+
+  /* HINT: one thing you could do here is define an ID selector in your resume/index.html -> <section id="resume"> 
+           and then you can generate a layour just for your resume
+           For example:
+  */
+
+#resume {
+  max-width: 50rem;
+  margin: 0 auto;       
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+  background: #d9fcff;
+  border-radius: 25px;
+}
+
+/* Contact Information Section */
+#resume #contact-info {
+  background: #98e0ff;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+/* Experience Section */
+#resume #experience {
+  background: #98e0ff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1em;
+}
+
+/* Each work experience article */
+#resume #experience article {
+  background: #d9fcff;
+  padding: 1rem;
+  border: 1px solid #8d95ff;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Experience header: use flex to align title and dates */
+#resume #experience article header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Education Section */
+#resume #education {
+  background: #98e0ff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+/* Skills Section */
+
+#resume #skills {
+  background: #98e0ff;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+#resume #skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content:center;
+}
+
+#resume #skills ul li {
+  background: #decfff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+}
+  
