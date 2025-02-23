@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Hyun Kim</strong> — <em>hkim2022@mit.edu</em>
+		</p>
+	</header>
+	<main>
+        <section>
+            <h2>Subtheme: Speculation</h2>
+    
+            <h3>Overall Analysis Questions</h3>
+            <ol>
+                <li>
+                    <strong>How much profit are investors making from property "flips" in the Metro Boston housing market?</strong>
+                    <p>
+                        Inspired by the MAPC "Homes for Profit" report which highlights how speculation drives up prices and displaces residents, I want to quantify the profit margins on flips and see if these margins have increased over time. 
+                        <br>(Sources: MAPC “Homes for Profit” report, discussions around speculative practices in local media)
+                    </p>
+                </li>
+                <li>
+                    <strong>Which neighborhoods in Boston are most affected by corporate ownership and absentee owners?</strong>
+                    <p>
+                        The Boston Globe’s investigative reporting on luxury developments and the impact of absentee ownership motivated this question. I aim to identify if certain areas are more prone to corporate or absentee ownership, potentially leading to diminished housing affordability. 
+                        <br>(Sources: Boston Globe’s “Reckoning with Boston’s Towers of Wealth”, ProPublica’s article on private equity landlords)
+                    </p>
+                </li>
+                <li>
+                    <strong>What is the relationship between high-income levels and absentee ownership in Boston’s newest luxury developments?</strong>
+                    <p>
+                        Building on insights from the ProPublica piece and conversations about wealth-driven housing speculation, I want to explore if higher income areas are linked to higher rates of absentee ownership in luxury high-rises, thereby reducing housing availability for locals. 
+                        <br>(Sources: ProPublica’s “When Private Equity Becomes Your Landlord”, MAPC report)
+                    </p>
+                </li>
+                <li>
+                    <strong>How do zoning regulations influence speculative investment and condo conversions in Boston?</strong>
+                    <p>
+                        Zoning regulations play a crucial role in determining land use and housing density. Inspired by patterns observed in the condo conversion data, this question aims to explore whether certain zoning classifications (e.g., residential vs. commercial) are more prone to speculative investment and condo development. Investigating this could reveal how zoning laws influence market dynamics and housing availability.
+                        <br>(Sources: Boston zoning ordinances, trends observed in condo conversion data, discussions around zoning impacts on housing affordability)
+                    </p>
+                </li>
+                
+                <li>
+                    <strong>Are there socioeconomic disparities in neighborhoods most affected by speculative investment and absentee ownership?</strong>
+                    <p>
+                        Building on observations from corporate ownership and absenteeism trends, this question examines whether speculative investment disproportionately affects lower-income or minority neighborhoods. By analyzing demographic data alongside ownership patterns, we can explore potential socioeconomic disparities and their implications on community stability and housing equity.
+                        <br>(Sources: Census data on income, race, and education; ProPublica’s investigations into housing inequalities; MAPC’s “Homes for Profit” report)
+                    </p>
+                </li>
+                
+            </ol>
+        </section>
+    
+        <section>
+            <h2>Discoveries & Insights</h2>
+    
+            <figure>
+                <img src="im1.png" width="800" height="400" alt="Trend in Corporate Ownership Over Time" />
+                <figcaption>
+                    <strong>Trend in Corporate Ownership Over Time</strong><br> This line chart shows the change in corporate ownership rates across various Boston neighborhoods from 2004 to 2024. The data reveals a steady increase in corporate ownership over the years, with some neighborhoods, such as South Boston and East Boston, experiencing more significant spikes. This trend suggests a growing interest in speculative investment by corporations, potentially impacting housing affordability and availability for local residents.
+                </figcaption>
+            </figure>
+    
+            <figure>
+                <img src="im2.png" width="700" height="400" alt="Owner Occupancy vs. Corporate Ownership by Neighborhood" />
+                <figcaption>
+                    <strong>Owner Occupancy vs. Corporate Ownership by Neighborhood</strong><br> This scatter plot compares corporate ownership rates to owner occupancy rates across Boston neighborhoods. There is an evident inverse relationship—neighborhoods with higher corporate ownership rates generally show lower owner occupancy. This pattern suggests that as more properties are acquired by corporations, fewer homes are occupied by local owners, highlighting the impact of absentee ownership on community stability.
+                </figcaption>
+            </figure>
+    
+            <figure>
+                <img src="im3.png"  width="700" height="400" alt="Impact of Corporate Ownership on Owner Occupancy" />
+                <figcaption>
+                    <strong>Impact of Corporate Ownership on Owner Occupancy</strong><br> This regression plot examines the correlation between corporate ownership rates and owner occupancy. The negative slope indicates a strong inverse relationship: neighborhoods with higher corporate ownership tend to have lower owner occupancy rates. This trend supports the hypothesis that speculative investment by corporations displaces local homeowners, contributing to housing unaffordability and community turnover.
+                </figcaption>
+            </figure>
+    
+            <figure>
+                <img src="im4.png" width="700" height="400" alt="Condo Conversions Over Time (2015–2024)" />
+                <figcaption>
+                    <strong>Condo Conversions Over Time (2015 to 2024)</strong><br> This bar chart illustrates the number of condo conversions in Boston from 2015 to 2024. There is a significant surge in conversions in 2024, possibly due to market trends or policy changes that incentivized conversions. A noticeable dip in 2020 may be attributed to the COVID-19 pandemic, which impacted real estate activities. This trend indicates how external factors and speculative opportunities influence condo conversion rates.
+                </figcaption>
+            </figure>
+    
+            <figure>
+                <img src="im5.png" width="700" height="400" alt="Condo Units Created by Zoning Code" />
+                <figcaption>
+                    <strong>Condo Units Created by Zoning Code</strong><br> This bar chart shows the number of condo units created by the original zoning classification before conversion. Residential zones like RC and A saw the highest number of units created, indicating a trend of converting traditional residential properties into condos. This pattern suggests that zoning regulations significantly impact condo development, potentially contributing to increased housing density and market speculation.
+                </figcaption>
+            </figure>
+    
+            <figure>
+                <img src="im6.png" width="700" height="400" alt="Condo Conversions by ZIP Code" />
+                <figcaption>
+                    <strong>Top 10 ZIP Codes for Condo Conversions</strong><br> This bar chart displays the top 10 ZIP codes in Boston with the highest number of condo conversions. The visualization highlights South Boston (02127) and Jamaica Plain (02130) as neighborhoods experiencing significant condo development, suggesting heightened speculative investment activity. These areas are likely attracting investors due to high demand and desirable locations, impacting housing availability and affordability for local residents.
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img src="im7.png" width="700" height="400" alt="Property Condition Before Condo Conversion" />
+                <figcaption>
+                    <strong>Property Condition Before Condo Conversion</strong><br> This bar chart shows the overall property condition before condo conversion. The majority of properties were in “Average” or “Good” condition prior to conversion, suggesting that investors prefer to convert reasonably maintained buildings rather than heavily distressed ones. This trend implies that speculative investment targets properties that require minimal renovation but offer significant profit potential.
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="im8.png" width="700" height="400" alt="Corporate Ownership vs. Population Demographics" />
+                <figcaption>
+                    <strong>Corporate Ownership vs. Population Demographics</strong><br> This scatter plot illustrates the relationship between corporate ownership rates and the population aged 18 and older across Boston neighborhoods. Some high-population neighborhoods, such as Dorchester and East Boston, show lower corporate ownership rates, while others with smaller populations, like Fenway and South Boston Waterfront, have significantly higher rates. This suggests that corporate investors may be targeting high-demand but smaller, more profitable markets.
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="im9.png" width="700" height="400" alt="Corporate Ownership vs. College-Educated Population" />
+                <figcaption>
+                    <strong>Corporate Ownership vs. College-Educated Population</strong><br> This scatter plot examines the correlation between corporate ownership rates and the number of college-educated residents by neighborhood. Areas with high concentrations of educated populations, such as Fenway and the South Boston Waterfront, exhibit higher corporate ownership rates. This indicates that investors may be speculating on neighborhoods perceived as desirable for affluent, educated renters or buyers.
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <img src="im10.png" width="700" height="400" alt="Geographic Distribution of Corporate-Owned Properties" />
+                <figcaption>
+                    <strong>Geographic Distribution of Corporate-Owned Properties</strong><br> Geographic Distribution of Corporate-Owned Properties:</strong> This horizontal bar chart displays the average corporate ownership rate by neighborhood. Fenway, South Boston Waterfront, and Downtown Boston show the highest concentrations of corporate-owned properties, reflecting heightened speculative activity. Conversely, neighborhoods like West Roxbury and Roslindale have the lowest rates, suggesting they are less attractive to corporate investors. This geographic disparity highlights the uneven impact of speculative investment across Boston.
+            
+        </section>
+    
+        <section>
+            <h2>Summary</h2>
+            <p>
+                In Boston, speculative investment in the housing market is influenced by several key factors: corporate ownership, absentee ownership, condo conversions, and neighborhood demographics. In this analysis, we identified that corporate ownership and absentee ownership are concentrated in specific neighborhoods, particularly in South Boston, Jamaica Plain, and the South Boston Waterfront. Condo conversions are also prevalent in these areas, often occurring in properties that are in good condition and located in residential zones. High-income neighborhoods with educated populations exhibit higher rates of absentee ownership, suggesting targeted speculative investment. Zoning regulations, population demographics, and education levels show moderate correlations with corporate ownership rates, while property condition and neighborhood location have strong correlations with condo conversions. Although these factors significantly influence speculative investment patterns, they do not fully explain the complexities of Boston's housing market. To gain a more comprehensive understanding, further analysis incorporating economic trends, policy changes, and community dynamics is needed.
+            </p>
+        </section>
+    </main>    
+</body>
+</html>
