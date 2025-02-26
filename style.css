@@ -12,9 +12,20 @@
    For examplem we can use :root to define colors
 */
 :root {
-  --color-accent: oklch(59.12% 0.2738 266.82) /* Primary accent color in OKLCH format */
+  --color-accent: oklch(59.12% 0.2738 266.82); /* Primary accent color in OKLCH format */
   --border-gray: oklch(80% 3% 200); /* Gray for borders */
   /* ADD the rest of the color definitions here if needed! */
+  /* color-scheme: dark; */
+  color-scheme: light dark;
+}
+
+.color-scheme {
+  position: absolute;
+  display: inline-flex;
+  top: 1rem;
+  right: 2rem;
+  gap: 0.3rem;
+  font-size: 80%;
 }
 
 /* STEP 1: Prevent content from getting too wide */
@@ -48,6 +59,7 @@ nav li {
 /* Step 2.2: Apply Flexbox to the navigation */
 nav {
   display: flex; /* Turns nav into a flex container */
+  --border-color: oklch(50% 10% 200 / 40%);
 
   /* You will need to continue writing here for step 2.3 */
 }
@@ -67,7 +79,7 @@ nav a {
 
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: var(--color-accent);
+  border-bottom-color: var(--border-color);;
   padding-bottom: 0.1em;
 }
   /* NOTE: please make sure that in each index.html page you add class="current" to the current page*/
@@ -76,7 +88,7 @@ nav a {
       nav a.current {
         font-weight: bold;
         border-bottom-width: 0.4em;
-        border-bottom-color: var(--border-gray);
+        border-bottom-color: var(--border-col);
         padding-bottom: 0.1em;
 
         
