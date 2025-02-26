@@ -16,7 +16,7 @@
   --border-gray: oklch(80% 3% 200); /* Gray for borders */
   /* ADD the rest of the color definitions here if needed! */
   /* color-scheme: dark; */
-  color-scheme: light dark;
+  color-scheme: light;
 }
 
 .color-scheme {
