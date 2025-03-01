@@ -22,7 +22,7 @@
 			<h2>Reading & Critique</h2>
 
 			<figure>
-				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
+				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" width="700" height="700" alt="" />
 			</figure>
 
 			<p>
@@ -30,9 +30,9 @@
 			</p>
 
 			<ul>
-				<li>INSIGHT 1</li>
-				<li>INSIGHT 2</li>
-				<li>INSIGHT 3</li>
+				<li>The spiral design clearly shows recurring peaks in COVID-19 cases around the winter months, particularly between December and January of each year, suggesting a seasonal pattern likely influenced by indoor gatherings and/or holidays.</li>
+				<li>The narrower sections in the spiral correspond to the summer months, where cases were consistently lower across all three years. This pattern suggests a correlation between warmer weather and reduced transmission rates.</li>
+				<li>The outward expansion of the spiral indicates that each subsequent year saw higher peaks in new COVID-19 cases compared to the previous year. The 2022 peak is notably larger than the 2021 and 2020 peaks.</li>
 			</ul>
 
 			<p>
@@ -40,9 +40,8 @@
 			</p>
 
 			<ul>
-				<li>CRITIQUE 1</li>
-				<li>CRITIQUE 2</li>
-				<li>CRITIQUE 3</li>
+				<li>This spiral visualization effectively captures the temporal progression of COVID-19 cases in the US from 2020 to 2022. One of its most noticeable feature is its ability to visually communicate the cyclical nature of the pandemic, with clear peaks occurring around each January, likely due to winter surges and holiday gatherings. By spiraling outward from the center, it shows how each year's wave was larger than the previous, emphasizing the growing impact of new variants. The design choice of using a spiral is visually compelling, and the use of shaded regions for the 7-day average smooths out daily fluctuations, making it easier to catch broader trends.</li>
+				<li>However, the spiral design comes at the cost of clarity. The unconventional layout can confuse viewers who are unfamiliar with circular timelines. The tightly packed inner spirals (2020) are difficult to read due to overlapping lines and little spacing, which could be solved by slightly separating the years to improve visibility. Also, the spiral communicates the relative increase in cases but lacks detailed quantitative labels, which could help viewers better understand the magnitude of each surge. More explicit annotations, such as peak values or key events could enhance interpretability.</li>
 			</ul>
 		</section>
 
@@ -50,9 +49,9 @@
 			<h2>Visualization Sketches</h2>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="sketch1.jpg" width="800" height="400" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Traditional Line Graph
 				</figcaption>
 			</figure>
 
@@ -61,15 +60,16 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>The motivation behind this sketch was to provide a conventional and familiar visualization that allows for clear comparison of time-series data across multiple years.</li>
+				<li>I was hoping it would communicate the seasonal peaks and increasing trend over time by clearly displaying the peaks for each year side by side.</li>
+				<li>The line graph effectively highlighted the temporal patterns and peak case numbers. However, it lacked the visual appeal and cyclical narrative present in the spiral design.</li>
+				<li>In the next sketch, I would like to explore adding labels to emphasize the peaks and include contextual annotations for significant events.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="sketch2.jpg" width="800" height="400" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Stacked Area Graph with Peak Annotations
 				</figcaption>
 			</figure>
 
@@ -78,15 +78,16 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>The motivation behind this sketch was to maintain a temporal flow while visually emphasizing the cumulative impact of COVID-19 cases each year.</li>
+				<li>I was hoping it would communicate the growing magnitude of cases year-over-year and highlight the most significant surges.</li>
+				<li>The stacked areas effectively showed the increasing trend and cumulative impact. However, the overlapping colors made it challenging to distinguish between the years.</li>
+				<li>I would like to explore adjusting the color opacity or using different patterns to enhance the distinction between the years and also make it more visually appealing.</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="sketch3.jpg" width="600" height="400" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Circular Stacked Bar Chart
 				</figcaption>
 			</figure>
 
@@ -95,9 +96,10 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>The motivation behind this sketch was to retain the cyclical representation from the original spiral design while enhancing clarity and visual appeal.</li>
+				<li>I was hoping it would communicate the seasonal recurrence of COVID-19 cases in a visually engaging way, showing how each peak surpassed the previous year.</li>
+				<li>The circular layout maintained the seasonal narrative effectively but appeared cluttered in the inner circles, making it harder to distinguish the values.</li>
+				<li>I plan to experiment with more labeling with better colors to improve readability and emphasize the seasonal differences in new COVID cases.</li>
 			</ul>
 		</section>
 
@@ -105,9 +107,9 @@
 			<h2>Final Visualization Design</h2>
       
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="A3Final.png" width="600" height="700" alt="" />
 				<figcaption>
-          BRIEF CAPTION HERE.
+					Circular Stacked Area Chart of New COVID-19 Cases in the US from 2020 to 2022, segmented by seasons.
 				</figcaption>
 			</figure>
 
@@ -115,16 +117,15 @@
 
 		<section>
 			<h2>Design Process & Design Decisions</h2>
-
 			<p>
-        DESCRIBE YOUR DESIGN PROCESS AND DECISION DECISIONS HERE.
-      </p>
-
-      <h3>Reflection</h3>
-
-      <p>
-        WRITE YOUR FINAL REFLECTION HERE.
-      </p>
+				The primary objective of this visualization was to effectively communicate the seasonal patterns and year-over-year trends in new COVID-19 cases in the US from 2020 to 2022. A circular stacked area chart was chosen for its ability to naturally convey cyclical data, emphasizing the repeating seasonal spikes observed during the pandemic. By arranging the months in a clockwise fashion, starting from August and progressing through July, the design aligns with typical flu seasonality, thereby contextualizing the winter surges more clearly. This layout helps to narrate the story of recurring winter peaks, particularly highlighting the significant impact of the Omicron variant in January 2022. The circular design reinforces the cyclical nature of the data, effectively depicting the seasonal recurrence of COVID-19 cases. Vibrant and contrasting colors were chosen for each year—Red for 2020, Blue for 2021, and Green for 2022—to maintain distinct layers while showing cumulative impacts. These colors provide clarity and help viewers easily differentiate each year’s contribution. The stacking approach was deliberately chosen to illustrate the cumulative progression of the pandemic. Although stacking slightly obscures exact values, color saturation and edge highlighting were employed to maintain visual separation between layers. To enhance the narrative of seasonal patterns, the circular background was divided into four quadrants representing the seasons: light orange for fall, light blue for winter, light green for spring, and light red for summer. These quadrant shades provide contextual separation, guiding the viewer to recognize seasonal cycles without overwhelming the data. The external seasonal labels—Spring, Summer, Fall, and Winter—are strategically placed to correspond with their respective quadrants, maintaining a clean and organized layout. These labels match the colors of their quadrants, ensuring consistency and intuitive understanding. To optimize the layout, the legend was moved to the bottom center, away from the graph and labels, ensuring an unobstructed view of the data and quadrant shading. These design choices collectively enhance narrative clarity while effectively balancing aesthetic appeal and functional communication.
+			  </p>
+			
+			  <h3>Reflection</h3>
+			
+			  <p>
+				The final design effectively communicates the seasonal patterns and year-over-year trends of COVID-19 cases by leveraging the cyclical nature of the circular stacked area chart. The decision to use quadrant shading enhances the narrative of seasonal waves while intuitively guiding the viewer through the cyclical progression of the pandemic. The choice to organize the months from August to July contextualizes the data within a seasonal framework, effectively emphasizing the recurring winter surges characteristic of COVID-19 outbreaks. This design resolves several critiques from the initial stages, such as the need for enhanced seasonal context and improved year-over-year comparison. The circular layout, quadrant shading, and strategic color choices successfully address these issues, providing a comprehensive and cohesive perspective on the data. However, one tradeoff of using stacking is that it slightly obscures the exact values for each layer, particularly for the lower segments. Additionally, while the circular layout effectively emphasizes seasonal patterns, it downplays the sequential progression of time. This could make it challenging for viewers to identify the precise duration of peaks or temporal intervals between spikes. A linear time series chart could offer a more detailed temporal view but would lose the cyclical narrative achieved here. Another potential limitation is the dual use of color—for the years and the seasonal quadrants—which could introduce cognitive overload. To mitigate this, color contrast and saturation were carefully managed to maintain visual distinction. Despite these challenges, the "critique by redesign" process helped highlight the effectiveness of a circular layout for emphasizing seasonal cycles and revealed the tradeoffs in balancing cumulative impact with detailed comparisons. This approach highlighted the importance of maintaining both visual expressiveness and data accuracy that can lead to a cohesive and impactful final visualization. The design not only achieves a clear and compelling narrative of seasonal COVID-19 trends but also balances aesthetic appeal with functional communication.
+			  </p>
 		</section>
 	</main>
 </body>
